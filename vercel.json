@@ -1,9 +1,6 @@
 {
-  "buildCommand": "mkdir -p dist && cp markdown-editor.html i18n.js dist/ && cp -r public dist/public 2>/dev/null || true && ls dist/",
+  "buildCommand": "mkdir -p dist && cp markdown-editor.html dist/index.html && cp i18n.js dist/i18n.js && cp -r public dist/public 2>/dev/null || true",
   "outputDirectory": "dist",
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    { "source": "/", "destination": "/markdown-editor.html" }
-  ]
+  "cleanUrls": false,
+  "trailingSlash": false
 }
