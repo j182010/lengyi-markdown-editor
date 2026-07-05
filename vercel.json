@@ -1,5 +1,6 @@
 {
-  "outputDirectory": ".",
+  "buildCommand": "mkdir -p dist && cp markdown-editor.html i18n.js dist/ && cp -r public dist/public 2>/dev/null || true && ls dist/",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
